@@ -36,7 +36,7 @@ test.describe("Home Page tests", () => {
         expect(menuItems).toContain("Admin")
         //Case 3: kiểm tra menuItems có đầy đủ các giá trị mong muốn ko
 
-
+        
     })
 
 })

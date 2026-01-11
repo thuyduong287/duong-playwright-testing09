@@ -13,8 +13,10 @@
     "test:login": "playwright test login.spec.ts --project=chromium --headed",
     "test:login-data": "playwright test tests/login-data.spec.ts --project=chromium --headed",
     "test:home": "playwright test home --project=chromium --headed",
-    "test:my-info": "playwright test myinfo --project=chromium --headed"
-  
+    "test:my-info": "playwright test myinfo --project=chromium --headed",
+    "test:mobile": "playwright test mobile --project=chromium --headed",
+    "test:get-by-role": "playwright test getByRole --project=chromium --headed"
+    
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,5 @@
 import {Page, Locator} from '@playwright/test'
+import { highLightAndScreenshot } from '../utils/screenshot';
 
 export class LoginPage {
     // locator
@@ -24,11 +25,14 @@ export class LoginPage {
         await this.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         // B2: fill username vào input
         await this.usernameInput.fill(username)
+        await highLightAndScreenshot(this.page, this.usernameInput, 'loginTesst', 'fill_username')
 
         // B3: fill password vào input
         await this.passwordInput.fill(password)
+        await highLightAndScreenshot(this.page, this.passwordInput, 'loginTesst', 'fill_password')
 
         // B4: enter nút login
+        await highLightAndScreenshot(this.page, this.loginButton, 'loginTesst', 'click_login_btn')
         await this.loginButton.click()
     }
 
