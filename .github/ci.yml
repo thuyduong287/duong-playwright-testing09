@@ -39,5 +39,5 @@ jobs:
         run: npx playwright install --with-deps
 
       #B5: chạy test
-      - name: Runplaywright test
+      - name: Run playwright test
         run: npx playwright test
